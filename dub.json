@@ -1,0 +1,13 @@
+{
+    "name": "mindwar",
+    "description": "A MUD written in D",
+    "copyright": "Copyright © 2014, w0rp",
+    "authors": ["w0rp"],
+    "license": "GPL-2.0",
+    "dependencies": {
+        "vibe-d": {
+            "version": "~master",
+            "path": "../vibe.d"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/* Reset absolutely everything to border-box, which makes more sense */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+.mindwarframe {
+    width: 100%;
+    height: 100%:
+}
+
+.mindwarframe > .textframe {
+    width: 100%;
+    height: 300px;
+
+    border: 2px solid black;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.mindwarframe > .textframe > p {
+    white-space: pre-wrap;
+}
+
+.mindwarframe > .textframe > p.echo {
+    color: green;
+}
+
+.mindwarframe > .textframe > p.echo:before {
+    content: ">>> ";
+}
+
+.mindwarframe > .textframe > p.info {
+    color: blue;
+}
+
+.mindwarframe > form {
+    width: 100%;
+}
+
+.mindwarframe > form > input[type="text"] {
+    width: calc(100% - 10em);
+}
+
+.mindwarframe > form > button {
+    width: 10em;
+}

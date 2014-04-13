@@ -1,0 +1,11 @@
+extends layout
+
+append head
+    link(rel="stylesheet", href="/static/css/mindwar.css")
+    script(src="/static/js/jquery-2.1.0.min.js")
+    script(src="/static/js/secretary.js")
+    script(src="/static/js/text_interface.js")
+    script(src="/static/js/mindwar.js")
+
+block body 
+    .mindwarframe
